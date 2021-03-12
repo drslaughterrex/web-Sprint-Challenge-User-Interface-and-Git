@@ -336,7 +336,7 @@ header nav a {
 	margin: auto;
 	display: flex;
 	flex-flow: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 .middle-content-about div {
 	width: 350px;
@@ -344,10 +344,17 @@ header nav a {
 	flex-direction: column;
 	margin-bottom: 20px;
 	border-bottom: 1px dashed black;
-	background: pink;
+	/* background: pink; */
 }
 .middle-content-about p {
 	padding-bottom: 20px;
+}
+.middle-content-about button{
+    width: 100px;
+    padding:5px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
 }
 .bottom-content {
 	display: flex;
@@ -362,6 +369,14 @@ header nav a {
 .bottom-content .text-container:last-child {
 	padding-right: 0;
 }
+.bottom-content-text{
+    width:800px;
+    padding-bottom: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 footer {
 	width: 100%;
@@ -369,9 +384,9 @@ footer {
 }
 
 footer nav {
-	width: 60%;
+	width: 75%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 20px 2%;
 	font-size: 14px;
@@ -380,4 +395,9 @@ footer nav {
 footer nav a {
 	color: white;
 	text-decoration: none;
+}
+.about-footer{
+    width: 800px;
+    display: flex;
+    margin: auto;
 }
