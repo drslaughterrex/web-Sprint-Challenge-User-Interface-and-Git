@@ -166,8 +166,9 @@ p {
 }
 .logo {
 	display: flex;
+    align-items: center;
 	margin: auto;
-	padding: 20px;
+	padding: 17px;
 	height: 75%;
 }
 header nav {
@@ -199,20 +200,22 @@ header nav a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+    
 }
 
 .top-content .text-container {
 	width: 48%;
-	padding: 0 1%;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 .top-content h2 {
-	padding: 20px 0 10px 10px;
+    padding: 20px 0 0 20px;
+    margin-bottom:0;
 }
 .top-content p {
-	padding: 10px;
-	border-bottom: 1px dashed black;
+	padding: 20px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
 }
 
 .middle-content {
@@ -339,22 +342,30 @@ header nav a {
 	justify-content: space-evenly;
 }
 .middle-content-about div {
-	width: 350px;
+	width: 375px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
 	border-bottom: 1px dashed black;
-	/* background: pink; */
+}
+.middle-content-about h2{
+    padding-top: 15px;
 }
 .middle-content-about p {
 	padding-bottom: 20px;
 }
-.middle-content-about button{
-    width: 100px;
-    padding:5px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 8px;
+.middle-content-about button {
+	width: 100px;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 8px;
+    font-size: 14px;
+	transition: 0.5s;
+}
+button:hover {
+	background-color: black;
+	color: white;
 }
 .bottom-content {
 	display: flex;
@@ -369,13 +380,13 @@ header nav a {
 .bottom-content .text-container:last-child {
 	padding-right: 0;
 }
-.bottom-content-text{
-    width:800px;
-    padding-bottom: 30px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.bottom-content-text {
+	width: 770px;
+	padding-bottom: 30px;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 footer {
@@ -386,7 +397,7 @@ footer {
 footer nav {
 	width: 75%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	padding: 20px 2%;
 	font-size: 14px;
@@ -396,8 +407,14 @@ footer nav a {
 	color: white;
 	text-decoration: none;
 }
-.about-footer{
-    width: 800px;
-    display: flex;
-    margin: auto;
+.about-footer {
+	width: 800px;
+	display: flex;
+	margin: auto;
+}
+.about-footer nav {
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
